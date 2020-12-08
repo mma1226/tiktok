@@ -1,0 +1,40 @@
+.clock-part {
+  height: 250px;
+  width: 250px;
+  background:  #ff708f; 
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;}
+
+ .clock-part:hover {
+  cursor: pointer;
+  background: linear-gradient(270deg, #ff00f5, #ffd736, #f2a4ff, #6bf51d, #06e854);
+  background-size: 1000% 1000%;
+
+  -webkit-animation: slideBackground 5s ease infinite;
+  -moz-animation: slideBackground 5s ease infinite;
+  animation: slideBackground 5s ease infinite;
+  margin-left: 40px;
+}
+
+@-webkit-keyframes slideBackground {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-moz-keyframes slideBackground {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes slideBackground {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+
+.container{
+	left:40vw;
+	top:10vw;
+	position:absolute;
+}
